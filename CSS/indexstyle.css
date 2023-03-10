@@ -1,0 +1,115 @@
+/* Style the main content section */
+main {
+  max-width: 960px;
+  margin-top: 1%;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the profile picture */
+img {
+  width: 60%;
+  border-radius: 50%;
+  margin: 100px 0;
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+/* Style the quote section */
+.quote {
+  width: 100%;
+  margin-top: 1%;
+  flex-grow: 1; /* make the quote section fill remaining space */
+}
+
+.quote p {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  margin: 1%; /* remove default margin for paragraphs */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1500;
+}
+
+.popup {
+  margin: 200px auto;
+  padding: 20px;
+  background: #e2dbdb;
+  border-radius: 1px;
+  min-width: 30%;
+  max-width: 50%;
+  height: 25%;
+  max-height: 50%;
+  position: relative;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+.popup .close:hover {
+  color: #868d89;
+}
+.popup .content {
+  max-height: 60%;
+  overflow: auto;
+}
+
+/* Add responsive styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  main {
+    flex-direction: column;
+  }
+  img {
+    margin: 20px auto;
+  }
+  .quote p {
+    font-size: 20px;
+  }
+}

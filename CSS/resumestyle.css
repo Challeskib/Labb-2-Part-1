@@ -1,0 +1,135 @@
+/* CV Container */
+
+.cv-container {
+  background-color: #fff;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* Skills Section */
+
+.skills-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.progress-bar {
+  background-color: #eee;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  transition: width 0s;
+  -webkit-transition: width 0s;
+  -moz-transition: width 0s;
+  -ms-transition: width 0s;
+  -o-transition: width 0s;
+}
+
+.progress-label {
+  display: block;
+  text-align: right;
+  color: #777;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 2px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+/* Resume Section */
+
+.resume-section {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 40px;
+  text-align: left;
+  border: #070707 solid;
+  border-width: 3%px;
+}
+
+.resume-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 50px 30px 30px 30px;
+}
+
+/* Work Experience Section */
+
+.work-experience-section {
+  margin-bottom: 40px;
+}
+
+.work-experience-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .resume-section {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 40px;
+  }
+}

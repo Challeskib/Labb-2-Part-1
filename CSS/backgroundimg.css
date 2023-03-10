@@ -1,0 +1,7 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-image: url("/Media/Himmel.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
