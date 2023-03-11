@@ -10,6 +10,10 @@ button2.addEventListener("click", function () {
   console.log("You clicked the button!");
 });
 
+function openLink() {
+  window.open("#popup1");
+}
+
 const elit = [1, 3, 3, 7];
 let rightAnswer = [];
 let counter = 0;
@@ -27,7 +31,7 @@ kombination.addEventListener("keypress", function (event) {
   }
   if (counter == 4) {
     console.log("GZ");
-
+    openLink();
     counter = 0;
     rightAnswer.length = 0;
   }

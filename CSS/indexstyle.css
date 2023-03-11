@@ -112,4 +112,110 @@ img {
   .quote p {
     font-size: 20px;
   }
+  .box {
+    padding: 30%;
+  }
+  .popup {
+    width: 70%;
+    max-width: none;
+  }
+  main li {
+    flex-basis: 100%;
+  }
+}
+
+/* Style for the hidden popup 1337 */
+
+/* .box {
+  width: 40%;
+  height: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 70px;
+  border: 2px solid #705c5c;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 60%;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #2d312f;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #b6ab84;
+} */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1500;
+}
+
+.popup {
+  margin: 200px auto;
+  padding: 20px;
+  background: #e2dbdb;
+  border-radius: 1px;
+  min-width: 30%;
+  max-width: 50%;
+  height: 25%;
+  max-height: 50%;
+  position: relative;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+.popup .close:hover {
+  color: #868d89;
+}
+.popup .content {
+  max-height: 60%;
+  overflow: auto;
 }
